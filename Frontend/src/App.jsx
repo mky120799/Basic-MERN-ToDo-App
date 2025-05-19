@@ -45,7 +45,7 @@
               </div>
             
         </div>
-        {showPopup && <Popup setShowPopup={setShowPopup} popupContent={popupContent} setUpdateUI={setUpdateUI}/>}
+        {showPopup && <Popup setShowPopup={setShowPopup} popupContent={popupContent} setUpdateUI={set}/>}
         </main>)
       }
 
