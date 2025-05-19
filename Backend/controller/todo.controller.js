@@ -41,7 +41,7 @@ const saveToDos = async (req, res) => {
 
 const updateToDos = async (req, res) => {
   const { todo } = req.body;
-  const { id } = req.params.id;
+  const { id } = req.params;
   console.log(`id: ${id} and new todo to update: ${todo}`);
   try {
     const updatedTodos = await todoModel.findByIdAndUpdate(id, { todo }, { new: true });
